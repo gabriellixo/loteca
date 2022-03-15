@@ -1,0 +1,58 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1, h3{
+    font-size: 5em;
+    color: darkgreen;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    word-spacing: 20px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 3em;
+    font-style: normal;
+    font-variant: normal;
+    color: rgb(18, 243, 18);
+    font-family: fantasy;
+    margin-top: 10px;
+
+}
+
+.selecao, .btnSort, .sorteio, .acerto{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 30px;
+}
+
+.selecao > input{
+    width: 1.5em;
+    
+    font-size: 4em;
+    margin-right: 15px;
+}
+
+.btnSort > button{
+ font-size: 2em;
+ padding: 10px 20px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+}
