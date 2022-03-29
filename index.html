@@ -4,40 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title> Simulador de loteria </title>
+    <title>Lotecaria - Simulador de Loteria</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-      <header>
-        <h1>Loteca</h1>
+    <header>
+        <h1>Lotecaria</h1>
         <h3>Simulador de Loteria</h3>
     </header>
 
-    <div class="selecao">
-    <input type="number" id="num1" class="num">
-    <input type="number" id="num2" class="num">
-    <input type="number" id="num3" class="num">
-    <input type="number" id="num4" class="num">
-    <input type="number" id="num5" class="num">
-    <input type="number" id="num6" class="num">
-    </div>
-
-    <div class="btnSort">
-        <button>Sortear</button>
+    <div class="numeros">
+        <input type="number" id="num1" onchange="getNum(value,1)">
+        <input type="number" id="num2" onchange="getNum(value,2)">
+        <input type="number" id="num3" onchange="getNum(value,3)">
+        <input type="number" id="num4" onchange="getNum(value,4)">
+        <input type="number" id="num5" onchange="getNum(value,5)">
+        <input type="number" id="num6" onchange="getNum(value,6)">
     </div>
 
     <div class="sorteio">
-        <h4>Numeros Sorteados:</h4>
-        <p id="sorteados"></p>
+        <button class="btnsort" onclick="sorteioNum()" >Sortear</button>
+        <p id="numsort"></p>
     </div>
 
-    <div class="acertos">
-        <h4>Acertos</h4>
-        <p id="acertos"></p>
+    <div class="vericacao">
+        <p>Total de acertos foi: <span id="total"></span> </p>
     </div>
-    
-    <footer>
-        <p>Desenvolvido por <a href="https://github.com/gabriellixo">@gabriellixo</a> </p>
-    </footer>
+    <script src="funcoes.js"></script>
 </body>
 </html>
