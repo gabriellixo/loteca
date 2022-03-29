@@ -4,7 +4,6 @@ var numDig=[]
 function sorteioNum(){
     if(numDig.length < 6){
         alert("Antes de sortear digite 6 numeros nos campos")
-    } else {
         
     numSort=[]
     do{
@@ -16,6 +15,8 @@ function sorteioNum(){
 
     document.getElementById("numsort").innerHTML=numSort
     verificaAcertos()
+    }else{
+        alert("aprovada na disciplina do carlos");
     }
 
 }
